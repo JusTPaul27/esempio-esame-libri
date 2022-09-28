@@ -48,6 +48,10 @@ function displayBooks(books) {
             bookDiv.appendChild(subjectDiv);
         }
 
+        const languages = document.createElement('div');
+        languages.innerText = 'language: ' + book.languages;
+        bookDiv.appendChild(languages);
+
         container.appendChild(bookDiv);
 
     }
